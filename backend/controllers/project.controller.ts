@@ -14,7 +14,7 @@ const createProject = async (req: Request, res: Response, next: NextFunction) =>
         team: [(teamMember)? teamMember.toObject(): undefined]
     });
     newProject.save()
-              .then((resolve) => {
+              .then((resolve:any) => {
                   console.log(resolve);
                   res.status(200)
                     .send("Project was successfully created");

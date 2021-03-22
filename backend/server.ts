@@ -27,7 +27,6 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded( { extended: false } ))
 
 
-
 // For sending view 
 app.use(express.static(path.join(__dirname, ".././frontend/build")));
 app.get("/", (req: Request, res: Response) => {
